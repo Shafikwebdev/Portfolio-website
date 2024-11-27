@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!--  Home  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Frontend developer</span></p>
+                <h1>Hi, I'm <span>Shafik <br> Frontend Developer.</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum doloribus illo earum obcaecati
+                    voluptate
+                    aspernatur, quis fugiat tempora totam nemo dolorum quae blanditiis ducimus fugit quia qui et
+                    expedita
+                    nulla!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  About Me  -->
+    <div id="about">
+        <div class="container">
+            <div class="rows">
+                <div class="about-col-1">
+                    <img src="images/image-2.jpg" width="400px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum obcaecati distinctio est, aperiam
+                        quia odit ab laborum, magni culpa maxime minima officia ipsam ex dicta esse nobis. Asperiores
+                        quod ut sint cumque sequi aperiam saepe, accusamus facilis expedita vel minima alias suscipit,
+                        repudiandae nostrum molestiae eveniet omnis laborum fugiat repellat?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Builiding Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Builiding Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Builiding Android apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  ---Services--- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam harum quod asperiores,
+                        vel veniam saepe in? Aliquid maiores libero nulla expedita, reiciendis maxime adipisci quidem
+                        delectus, ducimus, et reprehenderit?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam harum quod asperiores,
+                        vel veniam saepe in? Aliquid maiores libero nulla expedita, reiciendis maxime adipisci quidem
+                        delectus, ducimus, et reprehenderit?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-app-indicator"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quisquam harum quod asperiores,
+                        vel veniam saepe in? Aliquid maiores libero nulla expedita, reiciendis maxime adipisci quidem
+                        delectus, ducimus, et reprehenderit?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---Portfolio--- -->
+    <div id="portfolio">
+        <div class="contaner">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/app.jpg" width="200px" height="290px">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat dolorem
+                            praesentium quia pariatur ea fugit. Quidem hic rerum ratione.</p>
+                        <a href=""><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/website-design.jpg" width="300px">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat dolorem
+                            praesentium quia pariatur ea fugit. Quidem hic rerum ratione.</p>
+                        <a href=""><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web-image.jpg" width="300px" height="290px">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat dolorem
+                            praesentium quia pariatur ea fugit. Quidem hic rerum ratione.</p>
+                        <a href=""><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---Contact--- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send"></i>contact@example.com</p>
+                    <p><i class="bi bi-telephone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/feed/lule-shafik"><i class="bi bi-linkedin"></i></a>
+                        <a href="+27658701853"><i class="bi bi-whatsapp"></i></a>
+                        <a href="shafikwebdev"><i class="bi bi-github"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @Shafik. Made with <i class="bi bi-heart-fill"></i> by Shafik</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
